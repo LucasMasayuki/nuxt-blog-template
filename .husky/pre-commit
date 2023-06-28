@@ -1,0 +1,19 @@
+#!/bin/bash
+. "$(dirname "$0")/_/husky.sh"
+
+# Collect Files
+ts_files=$(git diff --name-only --staged --diff-filter=AMR | { grep ./ | grep ts$ || :; })
+vue_files=$(git diff --name-only --staged --diff-filter=AMR | {  grep ./ | grep vue$ || :; })
+
+if [ -z "$ts_files" ] && [ -z "$vue_files" ]
+then
+    echo "nothing to check"
+    exit 0
+fi
+
+# Run lint
+yarn lint:script $ts_files $vue_files
+yarn lint:style $vue_files
+
+# Run tests
+yarn test:unit related --run $ts_files $vue_files

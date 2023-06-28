@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/recommended",
+    "plugin:nuxt/recommended",
+    "plugin:vue/vue3-recommended",
+    "plugin:prettier/recommended",
+  ],
+
+  "plugins": ["@typescript-eslint", "prettier"],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+      "parser": "@typescript-eslint/parser"
+  },
+
+  "globals": {
+    "defineEmits": true,
+    "definePageMeta": true,
+    "defineProps": true,
+    "useRouter": true
+  },
+
+  "rules": {
+    "prettier/prettier": "error",
+    "vue/no-multiple-template-root": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/valid-attribute-name": "off",
+    "@typescript-eslint/explicit-function-return-type": ["error"],
+  }
+}

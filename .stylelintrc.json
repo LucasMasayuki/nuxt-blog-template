@@ -1,0 +1,17 @@
+{
+    "processors": [
+        "stylelint-processor-html"
+    ],
+    "extends": "stylelint-config-standard",
+    "customSyntax": "postcss-scss",
+    "files": [
+        "./**/*.vue",
+        "./**/*.scss",
+        "./**/*.css"
+    ],
+    "rules": {
+        "indentation": 2,
+        "no-empty-first-line": null,
+        "no-empty-source": null
+    }
+}

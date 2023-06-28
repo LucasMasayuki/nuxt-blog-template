@@ -1,0 +1,15 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "include": [
+      ".",
+  ],
+  "compileroptions": {
+      "types": [
+          "vitest/importMeta",
+          "vitest/globals",
+          "vite/client",
+          "@pinia/nuxt",
+      ],
+  }
+}

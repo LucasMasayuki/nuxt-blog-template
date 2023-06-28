@@ -1,0 +1,13 @@
+# nuxt
+*.log
+.nuxt
+nuxt.d.ts
+.output
+.env
+
+# libs
+node_modules
+
+# tests
+coverage
+coverage.json
