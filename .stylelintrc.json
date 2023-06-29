@@ -10,7 +10,7 @@
         "./**/*.css"
     ],
     "rules": {
-        "indentation": 2,
+        "indentation": 4,
         "no-empty-first-line": null,
         "no-empty-source": null
     }

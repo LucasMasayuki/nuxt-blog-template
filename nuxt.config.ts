@@ -3,8 +3,7 @@ import { fileURLToPath, URL } from "url"
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    modules: ["@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt"],
-
+    modules: ["@pinia/nuxt", "@pinia-plugin-persistedstate/nuxt", "@nuxt/content"],
     app: {
         head: {
             charset: "UTF-8",

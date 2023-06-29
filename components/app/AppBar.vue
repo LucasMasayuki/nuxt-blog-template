@@ -25,7 +25,7 @@
 
 <template>
     <AppDrawer :open="isOpen" @update:open="onCloseDrawer" />
-    <v-app-bar color="primary">
+    <v-app-bar color="surface">
         <template #prepend>
             <v-app-bar-nav-icon @click="onClickOpenDrawer" />
         </template>
@@ -33,7 +33,7 @@
         <v-app-bar-title>REPLACE</v-app-bar-title>
 
         <template #append>
-            <v-btn :prepend-icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'" @click="onClick">Toggle Theme</v-btn>
+            <v-btn density="default" :icon="theme === 'light' ? 'mdi-weather-sunny' : 'mdi-weather-night'" @click="onClick"></v-btn>
         </template>
     </v-app-bar>
 </template>
